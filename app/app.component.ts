@@ -1,6 +1,22 @@
 import { Component } from '@angular/core';
+import { TodoListComponent } from './todo/todo-list.component';
+
 @Component({
-    selector: 'my-app',
-    template: '<h1>My First Angular App</h1>'
+    selector: 'todo-app',
+    templateUrl: './app/app.component.html',
+    styleUrls: ['./app/app.component.css'],
+    directives: [TodoListComponent]
 })
-export class AppComponent { }
+export class AppComponent {
+    title: string;
+    todos: string[];
+
+    constructor() {
+        this.title = 'Angular 2Do';
+        this.todos = [];
+    }
+
+    addTodo(title: string) {
+        this.todos.push(title);
+    }
+}
