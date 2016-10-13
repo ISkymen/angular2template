@@ -5,7 +5,7 @@ import {todos} from "./components/shared/todo.data";
 @Component({
     selector: 'todo-app',
     templateUrl: './app/app.component.html',
-    styleUrls: ['./app/app.component.css'],
+    styleUrls: ['./app/app.component.css']
 })
 export class AppComponent {
     title: string;
@@ -16,7 +16,4 @@ export class AppComponent {
         this.todos = todos;
     }
 
-    onTodoAdded(todo: Todo) {
-        this.todos.push(todo);
-    }
 }
