@@ -12,3 +12,9 @@ h2, h3 {
 body {
     margin: 2em;
 }
+
+.start {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}

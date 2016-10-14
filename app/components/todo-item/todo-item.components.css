@@ -5,3 +5,38 @@
 .button {
     margin-left: auto;
 }
+
+.ui.checkbox {
+    width: 90%;
+    line-height: 2em;
+}
+
+.ui.checkbox .box:before, .ui.checkbox label:before {
+  top: 5px;
+}
+
+.ui.checkbox label {
+    line-height: 2em;
+    cursor: pointer;
+    text-align: left;
+}
+
+.ui.checkbox label:hover {
+    background: #F3F3F3;
+}
+
+.editbox {
+    display: none;
+}
+
+.edit .editbox {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    border: 1px solid orange;
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px;
+}
