@@ -35,6 +35,7 @@ export class TodoListComponent implements OnInit{
     }
 
     onTodoDeleted(todo: ITodo): void {
+        console.log(1);
         this.todoService.deleteTodo(todo);
     }
 }

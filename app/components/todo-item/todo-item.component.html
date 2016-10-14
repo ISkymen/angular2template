@@ -1,7 +1,9 @@
-<div class="ui checkbox">
+<div class="ui checkbox" [class.edit]="todo.edit">
     <input type="checkbox" (change)="toggleDone()">
-    <label [ngClass]="{done: todo.done}">{{ todo.title }}</label>
+    <label (dblclick)="editTodo(todo)" [ngClass]="{done: todo.done}">{{ todo.title }}</label>
+    <input class="editbox" *ngIf="todo.edit" [value]="todo.title" #editedtodo  (keyup.enter)="updateEditingTodo(todo, editedtodo.value)" (keyup.escape)="cancelEditingTodo(todo)" (blur)="cancelEditingTodo(todo)" autofocus>
 </div>
+
 <button class="ui red icon button" (click) = "delete()">
     <i class="trash outline icon"></i>
 </button>
