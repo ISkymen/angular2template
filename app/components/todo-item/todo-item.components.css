@@ -11,7 +11,11 @@
     line-height: 2em;
 }
 
+<<<<<<< HEAD
 .ui.checkbox .box:before, .ui.checkbox label:before, .ui.checkbox input[type=checkbox] {
+=======
+.ui.checkbox .box:before, .ui.checkbox label:before {
+>>>>>>> 5eab1bf1e9f6f73a23e6360cc140bc492245f5ca
   top: 5px;
 }
 
@@ -35,7 +39,11 @@
     top: 0;
     left: 20px;
     bottom: 0;
+<<<<<<< HEAD
     border: 1px solid rgba(34,36,38,.15);
+=======
+    border: 1px solid orange;
+>>>>>>> 5eab1bf1e9f6f73a23e6360cc140bc492245f5ca
     width: 100%;
     border-radius: 3px;
     padding: 5px;
